@@ -7,7 +7,7 @@ CLIENT_SECRET_KEY = "178626ce7aedb3db18d2eb783dbaaa380cbedd9e"
 
 
 def index(request):
-    return render(request, 'braincodes/home1.html')
+    return render(request, 'braincodes/home1.html', {} )
 
 
 
