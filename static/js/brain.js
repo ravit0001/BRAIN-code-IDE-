@@ -1,7 +1,7 @@
 
 
 /* On document load */
-//$(document).ready(function (){
+$(document).ready(function (){
 
     /* default theme */
     var DEFAULT_THEME = "terminal";
@@ -171,7 +171,7 @@
             custom_input = document.getElementById("custom-input-textbox").value;
         }
 
-         document.getElementById("demo").innerHTML = editor_content ;
+         //document.getElementById("demo").innerHTML = editor_content ;
         /* ready json of request */
         var request_data = {
             lang: current_lang,
@@ -179,7 +179,8 @@
             input: custom_input,
             csrfmiddlewaretoken: csrf_token
         };
-       //  document.getElementById("demo").innerHTML = request_data.lang + request_data.source + request_data.input;
+        console.log(request_data);
+       
                     /* ajax request to server */
         $.ajax({
             url: "/compile-and-run/",
@@ -225,4 +226,7 @@
         });
     });
     
-//});
+});
+
+
+// all file save kr de
