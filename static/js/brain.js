@@ -90,14 +90,14 @@ $(document).ready(function (){
     });
    
     /* save code click event */
-    $('#save-code').click(function () {
+  /*  $('#save-code').click(function () {
 
         var editor_content = editor.getValue();
         var current_lang = $('#editor-lang').val();
         update_content[current_lang]= editor_content ;
         document.getElementById('save-code').className ="btn btn-success" ;
 
-    });
+    });*/
 
     /* Language change event */
     $('#editor-lang').change(function () {
@@ -106,11 +106,11 @@ $(document).ready(function (){
 
         if( typeof update_content[current_lang] === 'undefined' ) {
             editor.setValue(INITIAL_CODE[current_lang]);
-            document.getElementById('save-code').className = "btn btn-info";
+           // document.getElementById('save-code').className = "btn btn-info";
         }
         else {
             editor.setValue(update_content[current_lang]);
-            document.getElementById('save-code').className = "btn btn-success";
+            //document.getElementById('save-code').className = "btn btn-success";
         }
 
         if(current_lang=='CPP11' || current_lang=='CPP' || current_lang == 'C') {
@@ -196,9 +196,9 @@ $(document).ready(function (){
                     else {
                         $('#input-success-pre').html("Standard input is empty");
                     }
-                    document.getElementById('compile-success-memory').innerHTML = response.run_status.memory_used;
-                    document.getElementById('compile-success-status').innerHTML = response.run_status.status;
-                    document.getElementById('compile-success-time').innerHTML = response.run_status.time_used;
+                    document.getElementById('memory').innerHTML = response.run_status.memory_used;
+                    document.getElementById('status').innerHTML = response.run_status.status;
+                    document.getElementById('time-to-run').innerHTML = response.run_status.time_used;
                     document.getElementById('share-link').innerHTML = response.web_link;
                     $('#compile-success').slideToggle();
                 }
