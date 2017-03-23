@@ -3,11 +3,11 @@ from django.http import JsonResponse
 import requests, datetime
 
 RUN_URL = "http://api.hackerearth.com/code/run/"
-CLIENT_SECRET_KEY = "178626ce7aedb3db18d2eb783dbaaa380cbedd9e"
+CLIENT_SECRET_KEY = "0cd8c796eb2f2510e1a567a2c578427afbe4506c"
 
 
 def index(request):
-    return render(request, 'braincode/home1.html')
+    return render(request, 'braincodes/home1.html')
 
 
 

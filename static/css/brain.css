@@ -125,7 +125,17 @@
     border-radius: 10px;
 }
 
+/* Checkbox */
+#custom-input-checkbox{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
+/* custom-input-container css*/
+.custom-input-container{
+    display: none;
+    margin-top: 10px ;
+}
 
 hr {
     display: block;
@@ -160,3 +170,7 @@ hr {
 
 }
 
+pre{
+    max-height: 500px;
+    overflow: auto;
+}
