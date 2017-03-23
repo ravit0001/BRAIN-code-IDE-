@@ -121,31 +121,62 @@
         <div class="col-md-12">
             <div class="Top-to-editor">
                 </br></br></br>
-                <div class="lang col-md-4">
-
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Choose Language</button>
+                <div class="lang col-md-2">
+                    <select class="form-control" name="lang" id="editor-lang">
+                            <option value="C" >C(gcc 4.8.1)</option>
+                            <option value="CPP" >C++(g++ 4.8.1) </option>
+                            <option value="CPP11" >C++11 </option>
+                            <option value="CLOJURE" >Clojure (clojure 1.4.0)</option>
+                            <option value="JAVA" >Java(openjdk 1.7.0_09)</option>
+                            <option value="JAVASCRIPT" >JavaScript(Rhino 1.7)</option>
+                            <option value="HASKELL" >Haskell(ghc 7.4.1)</option>
+                            <option value="PERL" >Perl(perl 5.14.2)</option>
+                            <option value="PHP" >PHP(php 5.3.10)</option>
+                            <option value="PYTHON" >Python(python 2.7.3)</option>
+                            <option value="RUBY" >Ruby(ruby 2.1.1)</option>
+                    </select>
                 </div>
 
                 <div class="download-btn col-md-1 ">
                     <button type="button" id="download-editor-code" value="download-sc" class="btn btn-info btn-lg"  data-toggle="tooltip" title="Download source code"><span class="glyphicon glyphicon-download-alt"></span></button>
                 </div>
                 <div class="theme col-md-1 " >
-                    <button type="button" class="btn btn-info btn-lg" >NEW CODE</button>
+                    <button type="button" href="/" class="btn btn-info btn-lg" >NEW CODE</button>
                 </div>
 
-                <div class="theme col-md-3 pull-right" >
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Choose Theme</button>
+                <div class="theme col-md-2 pull-right" >
+                    <select class="form-control" name="theme" id="editor-theme">
+                        <option value="terminal">Terminal</option>
+                        <option value="solarized_dark">Solarized Dark</option>
+                        <option value="twilight">Twilight</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="clouds">Clouds</option>
+                        <option value="clouds_midnight">Clouds Midnight</option>
+                        <option value="cobalt">Cobalt</option>
+                        <option value="crimson_editor">Crimson Editor</option>
+                        <option value="dawn">Dawn</option>
+                        <option value="eclipse">Eclipse</option>
+                        <option value="idle_fingers">Idle Fingers</option>
+                        <option value="kr_theme">Kr Theme</option>
+                        <option value="merbivore">Merbivore</option>
+                        <option value="merbivore_soft">Merbivore Soft</option>
+                        <option value="mono_industrial">Mono Industrial</option>
+                        <option value="monokai">Monokai</option>
+                        <option value="pastel_on_dark">Pastel On Dark</option>
+                        <option value="textmate">TextMate</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="vibrant_ink">Vibrant Ink</option>
+                    </select>
                 </div>
             </div>
          </div>
         </div>
     
-
+<!--
 
     <div id="myModal1" class="modal fade " role="dialog">
       <div class="modal-dialog modal-lg">
 
-        <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -181,7 +212,6 @@
     <div id="myModal2" class="modal fade " role="dialog">
       <div class="modal-dialog modal-lg">
 
-        <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -218,6 +248,7 @@
 
       </div>
     </div>
+  -->
 
 <!-- brain-code- -->
     <div class="row">
@@ -233,7 +264,17 @@
 
 <!-- CUSTOM-INPUT  -->
 
-    <div class="row" id="checkbox">
+   <div class="row" id="checkbox">
+        <div class="col-md-12 ">
+            <input type="checkbox" id="custom-input-checkbox" > Use custom input for testing your code
+            <div class="pull-right" >
+                <button class="btn btn-info" id="save-code" >Save Code</button>
+               <button class="btn btn-success" id="compile-and-run">Compile and Run</button>
+            </div>
+        </div>
+    </div>
+
+  <!--  <div class="row" id="checkbox">
         <div class="col-md-12 ">
             <div class="lang col-md-4">
                     <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal3">CUSTOM INPUT FOR TESTNG YOUR CODE</button>
@@ -249,7 +290,6 @@
     <div id="myModal3" class="modal fade " role="dialog">
       <div class="modal-dialog modal-lg">
 
-        <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -273,7 +313,7 @@
 
       </div>
     </div>
-
+-->
     </br></br>
 
     <!-- SUCCESSFUL  -->

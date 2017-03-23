@@ -36,8 +36,8 @@ $(document).ready(function (){
 
 
 
-    /* default theme */
-    var DEFAULT_THEME = "vibrant_ink";
+   /* default theme */
+    var DEFAULT_THEME = "terminal";
 
     /*default mode */
     var DEFAULT_MODE = 'c_cpp';
@@ -104,7 +104,7 @@ $(document).ready(function (){
     var statusBar = new StatusBar(editor, document.getElementById("bottom-to-editor"));
 
     /* initial code in editor */
-    editor.setValue(INITIAL_CODE['CPP']);
+    editor.setValue(INITIAL_CODE['C']);
 
 // END OF ACE EDITOR INITIATION
 
