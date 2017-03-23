@@ -132,11 +132,11 @@ $(document).ready(function (){
     });
 
     /* when custom input check is clicked */
-    $('#custom-input-checkbox').click(function () {
+   /* $('#custom-input-checkbox').click(function () {
 
         $('.custom-input-container').slideToggle();
 
-    });
+    });*/
 
     /* Compile and Run click event */
     $("#compile-and-run").click(function() {
@@ -167,9 +167,9 @@ $(document).ready(function (){
 
         /* Check if custom input in checked or not */
         var custom_input = null;
-        if ($('#custom-input-checkbox').prop("checked") == true) {
+        //if ($('#custom-input-checkbox').prop("checked") == true) {
             custom_input = document.getElementById("custom-input-textbox").value;
-        }
+        //}
 
          //document.getElementById("demo").innerHTML = editor_content ;
         /* ready json of request */
@@ -228,5 +228,3 @@ $(document).ready(function (){
     
 });
 
-
-// all file save kr de
