@@ -1,126 +1,41 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title> BrainCode | Online-Compiler </title>
-    {% load staticfiles %}
-    <link rel="stylesheet"  type="text/css" href="/static/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
+    <meta charset="UTF-8">
+    <title>YoIDE | Online IDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet"  type="text/css" href="/static/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/brain.css"/>
     <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+</head>
+<body>
 
 
-
-</head> 
-
-<body class="bg-color" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    
-    <!--  NAVBAR --> 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header" id="about">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="#">BRAIN-CODE</a>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span></a>
+                <a class="navbar-brand" href="/" ><strong>YoIDE</strong></a>
+            </div>
+            <div class="navbar-header pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="/" ><strong>New Code</strong></a></li>
+                    <li><a href="/contact-us"><strong>Contact us</strong></a></li>
+                    <li><a href="/feedback/"><strong>feedback</strong></a></li>
+                </ul>
+            </div> 
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#newcode">NEWCODE</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
 
+<div class="container">
 
-       <!-- JUMBO -->
-        <!--<div class="">
-            <div class="">
-                <img src="jumbo.jpg">
-            </div>
-        </div>   
--->
-        <div id="services">
-          <br>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-
-               <div class="item active">
-                <img src="/static/jumbo4.jpg" alt="Chania" width="460" height="345">
-                <div class="carousel-caption">
-                  <h3 style=""><strong style="color:#f4511e"> BrainCode </strong> an online compiler and debugging tool which allows you to compile source code and execute it online in more than<strong style="color:#f4511e"> 10 programming</strong> languages.</h3>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="/static/jumbo.jpg" alt="Chania" width="460" height="345">
-                <div class="carousel-caption">
-                  <h3 style="">Code can be <strong style="color:#f4511e">download</strong>  in the proper format to your computer system. This allows you to make adjustments or changes based on comments by others in order to develop an application on your local machine.</h3>
-                </div>
-              </div>
-            
-              <div class="item">
-                <img src="/static/jumbo3.jpg" alt="Flower" width="460" height="345">
-                <div class="carousel-caption">
-                  <h3 style="color:">For those who want to <strong style="color:#f4511e">Share </strong>the code with others,it  gives you a short URL which you can use to share it</h3>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="/static/jumbo1.jpg" alt="Flower" width="460" height="345">
-                <div class="carousel-caption">
-                  <h3 style="color:#f4511e">Free online compiler & IDE. Start writing code in minutes directly from your web browser using <strong> BrainCode </strong>. No installs, no setup, no hassles!</h3></br>
-                </div>
-              </div>
-          
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-
-
-     </br</br></br><div id="newcode"></div></br></br>
-
-
-    <!-- languages -->
-    <div class="container ">
-    
-        <div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="Top-to-editor">
-                </br></br></br>
                 <div class="lang col-md-2">
                     <select class="form-control" name="lang" id="editor-lang">
                             <option value="C" >C(gcc 4.8.1)</option>
@@ -136,14 +51,9 @@
                             <option value="RUBY" >Ruby(ruby 2.1.1)</option>
                     </select>
                 </div>
-
-                <div class="download-btn col-md-1 ">
-                    <button type="button" id="download-editor-code" value="download-sc" class="btn btn-info btn-lg"  data-toggle="tooltip" title="Download source code"><span class="glyphicon glyphicon-download-alt"></span></button>
+                <div class="download-btn col-md-1">
+                    <button id="download-editor-code" value="download-sc" class="btn btn-info btn-group-sm" title="Download source code"><span class="glyphicon glyphicon-download-alt"></span></button>
                 </div>
-                <div class="theme col-md-1 " >
-                   <a href="/"> <button type="button" href="/" class="btn btn-info btn-lg" >NEW CODE</button></a>
-                </div>
-
                 <div class="theme col-md-2 pull-right" >
                     <select class="form-control" name="theme" id="editor-theme">
                         <option value="terminal">Terminal</option>
@@ -170,101 +80,19 @@
                 </div>
             </div>
          </div>
-        </div>
-    
-<!--
-
-    <div id="myModal1" class="modal fade " role="dialog">
-      <div class="modal-dialog modal-lg">
-
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </br></br>
-            <h4 class="modal-title"> Choose Languages</h4>
-          </div>
-          <div class="modal-body">
-            </br></br>
-            <select class="form-control" name="lang" id="editor-lang">
-                            <option value="C" >C(gcc 4.8.1)</option>
-                            <option value="CPP" >C++(g++ 4.8.1) </option>
-                            <option value="CPP11" >C++11 </option>
-                            <option value="CLOJURE" >Clojure (clojure 1.4.0)</option>
-                            <option value="JAVA" >Java(openjdk 1.7.0_09)</option>
-                            <option value="JAVASCRIPT" >JavaScript(Rhino 1.7)</option>
-                            <option value="HASKELL" >Haskell(ghc 7.4.1)</option>
-                            <option value="PERL" >Perl(perl 5.14.2)</option>
-                            <option value="PHP" >PHP(php 5.3.10)</option>
-                            <option value="PYTHON" >Python(python 2.7.3)</option>
-                            <option value="RUBY" >Ruby(ruby 2.1.1)</option>
-                    </select>
-                    </br></br>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-          </div>
-        </div>
-
-      </div>
     </div>
 
-
-    <div id="myModal2" class="modal fade " role="dialog">
-      <div class="modal-dialog modal-lg">
-
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </br></br>
-            <h4 class="modal-title"> Choose Your THEME</h4>
-          </div>
-          <div class="modal-body">
-            </br></br>
-            <select class="form-control" name="theme" id="editor-theme">
-                        <option value="terminal">Terminal</option>
-                        <option value="chrome">Chrome</option>
-                        <option value="clouds">Clouds</option>
-                        <option value="clouds_midnight">Clouds Midnight</option>
-                        <option value="cobalt">Cobalt</option>
-                        <option value="crimson_editor">Crimson Editor</option>
-                        <option value="eclipse">Eclipse</option>
-                        <option value="kr_theme">Kr Theme</option>
-                        <option value="merbivore">Merbivore</option>
-                        <option value="merbivore_soft">Merbivore Soft</option>
-                        <option value="mono_industrial">Mono Industrial</option>
-                        <option value="monokai">Monokai</option>
-                        <option value="pastel_on_dark">Pastel On Dark</option>
-                        <option value="solarized_dark">Solarized Dark</option>
-                        <option value="twilight">Twilight</option>
-                        <option value="textmate">TextMate</option>
-                        <option value="vibrant_ink">Vibrant Ink</option>
-                    </select>
-                    </br></br>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  -->
-
-<!-- brain-code- -->
     <div class="row">
        <div class="col-md-12">
-            </br></br>
            <pre id="editor"></pre>
            <div id="bottom-to-editor" class="pull-right">
            </div>
-           </br></br>
        </div>
     </div>
 
 
-<!-- CUSTOM-INPUT  -->
 
-   <div class="row" id="checkbox">
+    <div class="row" id="checkbox">
         <div class="col-md-12 ">
             <input type="checkbox" id="custom-input-checkbox" > Use custom input for testing your code
             <div class="pull-right" >
@@ -278,50 +106,10 @@
     <div class="custom-input-container">
         <textarea rows="5" cols="160" class="nice-textarea" placeholder="Write your Inputs to program" id="custom-input-textbox"></textarea>
     </div>
-  <!--  <div class="row" id="checkbox">
-        <div class="col-md-12 ">
-            <div class="lang col-md-4">
-                    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal3">CUSTOM INPUT FOR TESTNG YOUR CODE</button>
-             </div> 
-            <div class="col-md-2 pull-right" >
-               <button class="btn btn-lg btn-success " id="compile-and-run">Compile and Run</button>
-            </div>
 
-        </div>
-    </div>
-</div>
 
-    <div id="myModal3" class="modal fade " role="dialog">
-      <div class="modal-dialog modal-lg">
 
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </br></br>
-            <h4 class="modal-title"> CUSTOM INPUT FOR TESTNG YOUR CODE</h4>
-          </div>
-          <div class="modal-body">
-            </br>
-                <h4 > PUT TEST CASE HERE</h4>
-            </br>
-                <div class="custom-input-container">
-                    <textarea rows="8" cols="120" class="nice-textarea" placeholder="Write your Inputs to program" id="custom-input-textbox"></textarea>
-                </div>
-
-            </br></br>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
--->
-    </br></br>
-
-    <!-- SUCCESSFUL  -->
-    <div class="container compile-successful " id="compile-success">
+    <div class="compile-done" id="compile-success">
         <div class="output-status" >
             <p><strong>Output</strong></p>
             <hr>
@@ -330,7 +118,7 @@
         <div class="input-staus" >
             <p><strong>Input</strong></p>
             <hr>
-            <div id="input-success-pre"></div>
+            <pre id="input-success-pre"></pre>
         </div>
         <div class="additional-success-details">
             <div class="row">
@@ -350,13 +138,13 @@
             <hr>
             <div class="row">
                 <div class="col-md-3">
-                    <p id="status"></p>
+                    <p id="compile-success-status"></p>
                 </div>
                 <div class="col-md-3">
-                    <p id="time-to-run"></p>
+                    <p id="compile-success-time"></p>
                 </div>
                 <div class="col-md-3">
-                    <p id="memory"></p>
+                    <p id="compile-success-memory"></p>
                 </div>
                 <div class="col-md-3">
                     <p id="share-link"></p>
@@ -365,8 +153,8 @@
         </div>
     </div>
 
-    <!-- UNSUCCESSFUL -->
-    <div class="container compile-unsuccessful" id="compile-failed">
+    
+    <div class="compile-not-done" id="compile-failed">
         <div class="compile-status">
             <p><strong>Compilation Log</strong></p>
             <hr>
@@ -380,7 +168,7 @@
         <div class="input-panel" >
             <p><strong>Input</strong></p>
             <hr>
-            <p id="input-failed-pre"></p>
+            <pre id="input-failed-pre"></pre>
         </div>
 
         <div class="additional-failed-details">
@@ -417,97 +205,20 @@
     </div>
 
 
+</div>
 
 
-    </br><div id="contact"></div></br></br></br>
-
-    <!-- CONTACT -->
-    <div class="container-fluid bg-grey">
-      </br></br>
-      <h2 class="text-center" >CONTACT</h2>
-      </br></br>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4">
-          <p>Contact us and we'll get back to you within 24 hours.</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span> NEW-DELHI, INDIA</p>
-          <p><span class="glyphicon glyphicon-phone"></span> +91 8800420785</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> ravit61294@gmail.com</p> 
-        </div>
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-          </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Send</button>
-            </div>
-          </div> 
-        </div>
-        </br></br>
-      </div>
-
-        </br></br>
-        
-      <!-- Add Google Maps -->
-        <div id="googleMap" style="height:400px;width:100%;"></div>
-        <script>
-        function myMap() {
-        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-        var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-        }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJA1F7NaanDNoXXpEIy4nJxmPwtzY1b2E&callback=myMap"></script>
+    <div class="container footer">
+        <br> <hr> <br>
+        <a href="https://hackerearth.com" target="_blank"><img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/badge/HE_badge_on_light.png" alt="Dark badge"></a>
+        <br>
+        <br>
     </div>
 
-    </br></br>
-
-    <!-- FOOTER --> 
-    <footer class="container-fluid text-center bg-color">
-          <a href="#myPage" title="To Top">
-          </br>
-            <span class="glyphicon glyphicon-chevron-up"></span>
-
-          </a>
-          </br></br>
-          <div class="item"><h4  >BrainCode made by : <strong style="color: #f4511e"> RAVIT SINGH MALIK </strong></h4></div>
-          </br></br>
-          <div class="container row text-center">
-            <div class="col-md-3"></div>
-            <div class="col-md-3" id="lin">
-                <a href="https://in.linkedin.com/in/ravit-singh-malik-97b542bb" title="linkedin"><img src="/static/lin.png"></a>
-            </div>
-            <div class="col-md-3" id="face">
-                <a href="https://www.facebook.com/ravit.singh.906" title="facebook"><img src="/static/face1.png"></a>
-            </div>
-            <div class="col-md-3" id="code">
-                <a href="https://www.codechef.com/users/ravit0001" title="codechef"><img src="/static/code.jpg"></a>
-            </div>
-          </br></br></br> 
-    </footer>
-</br></br> </br> 
-
-<script >
-$(window).load(function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
-    });
-
-
-</script>
 
     <script src="/static/src/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="/static/src/ext-statusbar.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/static/src/ext-language_tools.js"></script>
+    <script src=" /static/src/ext-language_tools.js"></script>
     <script src="/static/js/FileSaver.min.js"></script>
     <script type="text/javascript" src="/static/js/brain.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
@@ -533,13 +244,19 @@ $(window).load(function() {
     <script src="/static/src/theme-vibrant_ink.js" type="text/javascript" charset="utf-8"></script>
     <script src="/static/src/theme-terminal.js" type="text/javascript" charset="utf-8"></script>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<script src="/static/js/jquery.min.js"></script>        
-<script src="/static/js/bootstrap.min.js"></script> 
+      ga('create', 'UA-79857989-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
 <div>
-     <input type="hidden" name="csrfmiddlewaretoken" value="71Lkkm5dBLg8uSxH6UGQrILvaLMKTvA2" />
+     <input type="hidden" name="csrfmiddlewaretoken" value="j6KqI2GKJJakJf9hv3WPF19LWk6stXET" />
 </div>
 </body>
-
 </html>

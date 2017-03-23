@@ -1,130 +1,34 @@
-
-        img{
-            height: 400px;
-            width: 100%;
-        }
-        a > img
-        {
-            height: 45px;
-            width: 130px;
-        }
-        .navbar {
-            margin-bottom: 0;
-            background-color: #f4511e;
-            z-index: 9999;
-            border: 0;
-            font-size: 12px !important;
-            line-height: 1.42857143 !important;
-            letter-spacing: 4px;
-            border-radius: 0;
-        }
-
-        .navbar li a, .navbar .navbar-brand {
-            color: #fff !important;
-        }
-
-        .navbar-nav li a:hover, .navbar-nav li.active a {
-            color: #f4511e !important;
-            background-color: #fff !important;
-        }
-
-        .navbar-default .navbar-toggle {
-            border-color: transparent;
-            color: #fff !important;
-        }
-        .carousel-control.right, .carousel-control.left {
-            background-image: none;
-            color: #f4511e;
-        }
-
-        .carousel-indicators li {
-            border-color: #f4511e;
-        }
-
-        .carousel-indicators li.active {
-            background-color: #f4511e;
-        }
-
-        .item h4 {
-            font-size: 19px;
-            line-height: 1.375em;
-            font-weight: 400;
-            font-style: italic;
-            margin: 15px 0;
-        }
-
-        .item span {
-            font-style: normal;
-        }
-        footer .glyphicon {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #f4511e;
-        }
-                .bg-grey{
-            background-color: #f6f6f6;
-        }   
-        .bg-color
-        {
-            background-color: #E0FFD6;
-        }
-
-  .slideanim {visibility:hidden;}
-  .slide {
-          animation-name: slide;
-          -webkit-animation-name: slide;
-          animation-duration: 1s;
-          -webkit-animation-duration: 1s;
-          visibility: visible;
-      }
-      @keyframes slide {
-        0% {
-          opacity: 0;
-          transform: translateY(70%);
-        } 
-        100% {
-          opacity: 1;
-          transform: translateY(0%);
-        }
-      }
-      @-webkit-keyframes slide {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(70%);
-        } 
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .col-sm-4 {
-          text-align: center;
-          margin: 25px 0;
-        }
-        .btn-lg {
-            width: 100%;
-            margin-bottom: 35px;
-        }
-      }
-      @media screen and (max-width: 480px) {
-        .logo {
-            font-size: 150px;
-        }
-      } 
-      .carousel-inner > .item > img,
-          .carousel-inner > .item > a > img {
-              width: 100%;
-              margin: auto;
-              height: 600px;
-          }
-
-#editor {
-    margin: 0%;
-    height: 500px;
-    border-radius: 10px;
+/*body css */
+body{
+     background-color: #D3D3D3 ;
+     overflow: auto;
 }
 
+/* Top to Editor */
+.Top-to-editor {
+  margin: 0;
+  padding:1%;
+  height: 56px;
+  background-color: rgb(245, 245, 245);
+}
+
+/* Download button */
+.download-btn{
+    padding-left: 696px ;
+}
+
+/* Editor */
+#editor{
+    margin: 0%;
+    height: 425px;
+}
+
+/* bottom-to-editor*/
+#bottom-to-editor{
+    margin:0%;
+    height:25px;
+    background-color: #D3D3D3;
+}
 /* Checkbox */
 #custom-input-checkbox{
     margin-top: 10px;
@@ -138,38 +42,41 @@
 }
 
 hr {
-    display: block;
-    position: relative;
-    padding: 0;
-    margin: 8px auto;
-    height: 0;
-    width: 100%;
-    max-height: 0;
-    font-size: 1px;
-    line-height: 0;
-    clear: both;
-    border: none;
-    border-top: 1px solid #aaaaaa;
-    border-bottom: 1px solid #ffffff;
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
 }
 
-.compile-successful {
+/* css for when compilation is done successfully */
+.compile-done{
     display: none;
-    margin-top: 6px;
-    padding: 1%;
-    border-radius: 5px;
-    background-color: #FFFFDB;
+    margin-top: 6px ;
+    padding:1%;
+    border-style: dotted;
+    border-color: darkblue;
+    background-color: #D3D3D3;
+}
+/* css for when compilation is failed*/
+.compile-not-done{
+    display: none;
+    margin-top: 6px ;
+    padding:1%;
+    border-style: dotted;
+    border-color: darkblue;
+    background-color: #D3D3D3;
 }
 
-.compile-unsuccessful {
-     display: none;
-    margin-top: 6px;
-    padding: 1%;
-    border-radius: 5px;
-    background-color: #FFFFDB;
-
-}
-
+/* pre tag attribute */
 pre{
     max-height: 500px;
     overflow: auto;
