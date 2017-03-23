@@ -1,15 +1,17 @@
+
+
 /* On document load */
-$(document).ready(function (){
+//$(document).ready(function (){
 
     /* default theme */
     var DEFAULT_THEME = "terminal";
-
+    
     /*default mode */
     var DEFAULT_MODE = 'c_cpp';
 
     /*compile and run url */
     var COMPILE_AND_RUN_URL = '/compile-and-run/';
-
+     
     /*Initial code in ace-editor */
     var INITIAL_CODE={};
 
@@ -46,7 +48,7 @@ $(document).ready(function (){
     ace.require('ace/ext/language_tools');
     /* initiate  Ace editor */
     var editor=ace.edit("editor");
-
+      
     /* default theme setup */
     editor.setTheme("ace/theme/"+DEFAULT_THEME);
 
@@ -81,11 +83,12 @@ $(document).ready(function (){
     $('#editor-theme').change(function () {
 
         var current_theme = $('#editor-theme').val();
+        
+
         editor.setTheme("ace/theme/" + current_theme);
 
     });
-
-
+   
     /* save code click event */
     $('#save-code').click(function () {
 
@@ -153,11 +156,11 @@ $(document).ready(function (){
         if ($('#compile-failed').css('display') != 'none') {
             $('#compile-failed').slideToggle();
         }
-        var csrf_token = $("input[name='csrfmiddlewaretoken']").val();
         /* Get content of editor */
         var editor_content = editor.getValue();
         /* Current language of editor */
         var current_lang = $('#editor-lang').val();
+        
         /* Disable the button */
         $("#compile-and-run").prop("disabled", true);
 
@@ -167,15 +170,15 @@ $(document).ready(function (){
             custom_input = document.getElementById("custom-input-textbox").value;
         }
 
+         document.getElementById("demo").innerHTML = editor_content ;
         /* ready json of request */
         var request_data = {
             lang: current_lang,
             source: editor_content,
             input: custom_input,
-            csrfmiddlewaretoken: csrf_token
         };
-
-        /* ajax request to server */
+       //  document.getElementById("demo").innerHTML = request_data.lang + request_data.source + request_data.input;
+                    /* ajax request to server */
         $.ajax({
             url: "/compile-and-run/",
             data: request_data,
@@ -220,4 +223,4 @@ $(document).ready(function (){
         });
     });
     
-});
+//});
