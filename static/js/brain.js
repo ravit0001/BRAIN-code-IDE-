@@ -156,6 +156,7 @@
         if ($('#compile-failed').css('display') != 'none') {
             $('#compile-failed').slideToggle();
         }
+        var csrf_token = $("input[name='csrfmiddlewaretoken']").val();
         /* Get content of editor */
         var editor_content = editor.getValue();
         /* Current language of editor */
@@ -176,6 +177,7 @@
             lang: current_lang,
             source: editor_content,
             input: custom_input,
+            csrfmiddlewaretoken: csrf_token
         };
        //  document.getElementById("demo").innerHTML = request_data.lang + request_data.source + request_data.input;
                     /* ajax request to server */
