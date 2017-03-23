@@ -24,7 +24,7 @@ def compile_and_run(request):
         if request.POST.get("input", ""):
             data['input'] = request.POST.get("input", "")
         response_data = requests.post(RUN_URL, data=data)
-        print response_data.text
+        print (response_data.text)
         return JsonResponse(response_data.json(), safe=False)
     else:
         return render(request, "error.html", {"test": " Oops bad request !! "})
