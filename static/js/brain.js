@@ -3,6 +3,21 @@
 /* On document load */
 $(document).ready(function (){
 
+ $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  if (this.hash !== "") {
+
+    event.preventDefault();
+    var hash = this.hash;$('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 3000, function(){
+
+      window.location.hash = hash;
+      });
+}
+  });
+
+
+
     /* default theme */
     var DEFAULT_THEME = "terminal";
     
