@@ -20,11 +20,11 @@ $(document).ready(function (){
     INITIAL_CODE['CPP11']='#include <iostream>\nusing namespace std;\n\nint main()\n{\n    cout << "Hello World!" << endl;\n    return 0;\n}';
     INITIAL_CODE['CLOJURE']='(println "Hello World!")';
     INITIAL_CODE['JAVA']='/* IMPORTANT: class must not be public. */\n\n/*\n * uncomment this if you want to read input.\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\n*/\n\nclass TestClass {\n    public static void main(String args[] ) throws Exception {\n        /*\n         * Read input from stdin and provide input before running\n\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        String line = br.readLine();\n        int N = Integer.parseInt(line);\n        for (int i = 0; i < N; i++) {\n            System.out.println("hello world");\n        }\n        */\n\n        System.out.println("Hello World!");\n    }\n}';
-    INITIAL_CODE['JAVASCRIPT']='function main(input) {\n    //Enter your code here\n    process.stdout.write(input);\n}\n\nprocess.stdin.resume();\nprocess.stdin.setEncoding("utf-8");\nvar stdin_input = "";\n\nprocess.stdin.on("data", function (input) {\n    stdin_input += input;\n});\n\nprocess.stdin.on("end", function () {\n   main(stdin_input);\n});';
+    INITIAL_CODE['JAVASCRIPT']="print ('Hello World!\n')";
     INITIAL_CODE['HASKELL']='module Main\n  where\n\nmain=putStrLn "Hello World!\n"';
     INITIAL_CODE['PERL']="use strict;\n\n=comment\n# Read input from stdin and provide input before running code\n\n# Echo input to output.\nwhile(my $fred = <STDIN>) {\n    print $fred;\n}\n=cut\n\nprint 'Hello World!'";
     INITIAL_CODE['PHP']='<?php\n\n/*\n * Read input from stdin and provide input before running code\n\nfscanf(STDIN, "%s\n", $name);\necho "Hi, ".$name;\n\n*/\n\necho "Hello World!";\n\n\n?>';
-    INITIAL_CODE['PYTHON']=" '''\n# Read input from stdin and provide input before running code\n\nname = raw_input('What is your name?\n')\nprint 'Hi, %s.' % name\n'''\nprint 'Hello World!'' ";
+    INITIAL_CODE['PYTHON']=" '''\n# Read input from stdin and provide input before running code\n\nname = raw_input('What is your name?\n')\nprint 'Hi, %s.' % name\n'''\nprint 'Hello World!' ";
     INITIAL_CODE['RUBY']='# your code goes here';
 
     /* file extensions for languages*/
