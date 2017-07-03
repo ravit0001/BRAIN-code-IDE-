@@ -32,3 +32,18 @@ def compile_and_run(request):
     else:
         return render(request, "error.html", {"test": " Oops bad request !! "})
 
+@csrf_exempt
+def contact(request):
+    if request.method == "POST" and request.is_ajax():
+        data = {
+            'name': request.POST.get("name", " "),
+            'email': request.POST.get("email", " "),
+            'comment': request.POST.get("comment", " ")
+            
+        }
+
+        
+        return JsonResponse(data, safe=False)
+    else:
+        return render(request, "error.html", {"test": " Oops bad request !! "})
+
