@@ -1,5 +1,6 @@
 # BRAIN-code-IDE
-[link to project ](https://braincode.herokuapp.com)
+[https://braincode.herokuapp.com](https://braincode.herokuapp.com).
+<br />
 BrainCode is an Online IDE, Compiler and Interpreter which supports 5 core programming languages -
 
 C,C++, Python, Java, Javascript using HackerEarth API which receives all the data via POST and return the
