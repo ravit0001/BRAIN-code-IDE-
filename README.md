@@ -1,5 +1,5 @@
 # BRAIN-code-IDE
-[https://braincode.herokuapp.com](https://braincode.herokuapp.com).
+[https://braincode.herokuapp.com](https://braincode.herokuapp.com)
 <br />
 BrainCode is an Online IDE, Compiler and Interpreter which supports 5 core programming languages -
 
